@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </head>
+  
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    EJS<br>
+    MongoDB<br>
+    <input type="text" name="userId"/>
+    <button>Join</button>
+  </body>
+ 
+    <script>
+  	$('button').click(function(){
+  	alert($('[name="userId"]').val());
+  		window.location = '/main/'+$('[name="userId"]').val();  		
+  	})
+  </script>
+</html>
